@@ -1,0 +1,26 @@
+Given a sentence and a target keyword, extract a structured scene abstraction and format your response as a bullet point list with two layers: Scene Overview and Scene Profile.
+
+1. **Scene Overview:**
+   - **Events:**
+     - List only what happened in COMET-ATOMIC style (e.g., "PersonX opens ObjectY").
+     - Do not include properties, emotions, or interpretations.
+     - Do not include definitions or static facts (e.g., "ObjectX is garbage").
+     - Avoid redundancies.
+   - **Entities:**
+     - List each entity with its surface mention (e.g., "PersonX (she)").
+     - For each entity, include:
+       - Role(s) with associated Frame(s)
+       - Property: context-specific traits with brief explanations
+       - Emotion: inferred emotional states with explanations (if present)
+   - **Setting:**
+     - Describe Place, Time, and Atmosphere if inferable.
+     - Use "unspecified" when not identifiable.
+
+2. **Scene Profile:**
+   - Keyword: the target expression (with its assigned label)
+   - Engaged Events: COMET-ATOMIC style events involving the keyword
+   - Generalizable Properties: abstract traits implied by the context (not general facts)
+   - Evoked Emotions: only if contextually implied
+
+**All entity labels must use X/Y/Z suffixes only (e.g., PersonX, ObjectY). Do not use proper names.**
+**Format must be a bullet-style list. Do not include any extra explanation outside the bullet list.**
