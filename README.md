@@ -224,3 +224,12 @@ for row in load_jsonl("scene/raccoon/raccoon-gpt-4o-mini.jsonl"):
     print("  context entities:", list(context.keys()))
     print("  scene profile:", parsed["engaged_events"], parsed["generalizable_properties"], parsed["evoked_emotions"])
 ```
+
+## Citation
+
+If you use this code, please cite:
+
+> Cho, Y. (2026). *Understanding Word Meaning Through Scenes*. Doctoral dissertation, The University of Texas at Austin.
+
+- [Dissertation (PDF)](https://www.dropbox.com/scl/fi/j0wov7hqx9mutbkv3qx4l/ycho-dissertation.pdf?rlkey=ajumn7dir94h38bbc18nr6wr4&st=zadjjcq0&dl=0)
+- [Defense slides (PDF)](https://www.dropbox.com/scl/fi/7wt9hov1mmod6en7bzj8w/cho-phd-defense.pdf?rlkey=miny8qoxjyctgr6bz35o8m121&st=avah49lu&dl=0)
